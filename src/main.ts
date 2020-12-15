@@ -7,6 +7,8 @@ const createWindow = async () => {
     webPreferences: {
       nodeIntegration: true,
     },
+    autoHideMenuBar: true,
+    frame: false,
   });
 
   await window.loadFile('src/ui/index.html');
